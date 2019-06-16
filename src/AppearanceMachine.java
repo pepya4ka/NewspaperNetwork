@@ -355,7 +355,7 @@ public class AppearanceMachine implements ActionListener {
 
                 timer = new Timer();
                 myTimerTask = new MyTimerTask();
-                timer.scheduleAtFixedRate(myTimerTask, 0, 125);//(long) 62.5
+                timer.scheduleAtFixedRate(myTimerTask, 0, 62);//(long) 62.5
 
                 runnableCircle = new RunnableForCircle();
                 textArea1 = new textArea1();
@@ -554,9 +554,10 @@ public class AppearanceMachine implements ActionListener {
                     newspaperMachine1.newspaper4--;
                     break;
             }
-            StringBuffer stringBuffer = new StringBuffer(newspaperMachine1.newspaper1 + " " + newspaperMachine1.newspaper2 + " "
-                    + newspaperMachine1.newspaper3 + " " + newspaperMachine1.newspaper4);
-            jLabelAmounNewspaper1.setText(stringBuffer.toString());
+            amountPromotional1.setText("Рекламно-информационных газет: " + newspaperMachine1.newspaper1);
+            amountEntertaining1.setText("Развлекательных газет: " + newspaperMachine1.newspaper2);
+            amountDaily1.setText("газет Русский-Кроссворд: " + newspaperMachine1.newspaper3);
+            amountWeekly1.setText("Ежедневных газет: " + newspaperMachine1.newspaper4);
             newspaperMachine1.amountsOperations++;
 //            jLabelForMachine1.setText("Автомат 1 (" + newspaperMachine1.getAmountsOperations() + ")");
             jLabelAmountOperation1.setText("Кол-во завершенных операций: " + newspaperMachine1.getAmountsOperations());
@@ -696,9 +697,10 @@ public class AppearanceMachine implements ActionListener {
                     newspaperMachine2.newspaper4--;
                     break;
             }
-            StringBuffer stringBuffer = new StringBuffer(newspaperMachine2.newspaper1 + " " + newspaperMachine2.newspaper2 + " "
-                    + newspaperMachine2.newspaper3 + " " + newspaperMachine2.newspaper4);
-            jLabelAmounNewspaper2.setText(stringBuffer.toString());
+            amountPromotional2.setText("Рекламно-информационных газет: " + newspaperMachine2.newspaper1);
+            amountEntertaining2.setText("Развлекательных газет: " + newspaperMachine2.newspaper2);
+            amountDaily2.setText("газет Русский-Кроссворд: " + newspaperMachine2.newspaper3);
+            amountWeekly2.setText("Ежедневных газет: " + newspaperMachine2.newspaper4);
             jLabelAmountOperation2.setText("Кол-во завершенных операций: " + newspaperMachine2.getAmountsOperations());
 //            jLabelForMachine2.setText("Автомат 2 (" + newspaperMachine2.getAmountsOperations() + ")");
             randomForSleep = random.nextInt(2000) + 2000;
@@ -837,9 +839,10 @@ public class AppearanceMachine implements ActionListener {
                     newspaperMachine3.newspaper4--;
                     break;
             }
-            StringBuffer stringBuffer = new StringBuffer(newspaperMachine3.newspaper1 + " " + newspaperMachine3.newspaper2 + " "
-                    + newspaperMachine3.newspaper3 + " " + newspaperMachine3.newspaper4);
-            jLabelAmounNewspaper3.setText(stringBuffer.toString());
+            amountPromotional3.setText("Рекламно-информационных газет: " + newspaperMachine3.newspaper1);
+            amountEntertaining3.setText("Развлекательных газет: " + newspaperMachine3.newspaper2);
+            amountDaily3.setText("газет Русский-Кроссворд: " + newspaperMachine3.newspaper3);
+            amountWeekly3.setText("Ежедневных газет: " + newspaperMachine3.newspaper4);
             jLabelAmountOperation3.setText("Кол-во завершенных операций: " + newspaperMachine3.getAmountsOperations());
 //            jLabelForMachine3.setText("Автомат 3 (" + newspaperMachine3.getAmountsOperations() + ")");
             randomForSleep = random.nextInt(2000) + 2000;
